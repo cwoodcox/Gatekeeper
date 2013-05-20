@@ -21,6 +21,9 @@
 		DFC2CB8317499F8100EB0833 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC2CB6417499F8100EB0833 /* Foundation.framework */; };
 		DFC2CB8B17499F8100EB0833 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFC2CB8917499F8100EB0833 /* InfoPlist.strings */; };
 		DFC2CB8E17499F8100EB0833 /* GatekeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2CB8D17499F8100EB0833 /* GatekeeperTests.m */; };
+		DFC2CB991749A44A00EB0833 /* GKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2CB981749A44A00EB0833 /* GKLocationManager.m */; };
+		DFE9E39C1749E052002883ED /* GKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9E39B1749E051002883ED /* GKMainViewController.m */; };
+		DFE9E39E1749FFE1002883ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE9E39D1749FFE1002883ED /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		DFC2CB8A17499F8100EB0833 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFC2CB8C17499F8100EB0833 /* GatekeeperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GatekeeperTests.h; sourceTree = "<group>"; };
 		DFC2CB8D17499F8100EB0833 /* GatekeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GatekeeperTests.m; sourceTree = "<group>"; };
+		DFC2CB971749A44A00EB0833 /* GKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKLocationManager.h; sourceTree = "<group>"; };
+		DFC2CB981749A44A00EB0833 /* GKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKLocationManager.m; sourceTree = "<group>"; };
+		DFE9E39A1749E051002883ED /* GKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMainViewController.h; sourceTree = "<group>"; };
+		DFE9E39B1749E051002883ED /* GKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMainViewController.m; sourceTree = "<group>"; };
+		DFE9E39D1749FFE1002883ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				DFC2CB6317499F8100EB0833 /* UIKit.framework in Frameworks */,
 				DFC2CB6517499F8100EB0833 /* Foundation.framework in Frameworks */,
 				DFC2CB6717499F8100EB0833 /* CoreGraphics.framework in Frameworks */,
+				DFE9E39E1749FFE1002883ED /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +110,7 @@
 		DFC2CB6117499F8100EB0833 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFE9E39D1749FFE1002883ED /* CoreLocation.framework */,
 				DFC2CB6217499F8100EB0833 /* UIKit.framework */,
 				DFC2CB6417499F8100EB0833 /* Foundation.framework */,
 				DFC2CB6617499F8100EB0833 /* CoreGraphics.framework */,
@@ -114,6 +124,10 @@
 			children = (
 				DFC2CB7117499F8100EB0833 /* GKAppDelegate.h */,
 				DFC2CB7217499F8100EB0833 /* GKAppDelegate.m */,
+				DFE9E39A1749E051002883ED /* GKMainViewController.h */,
+				DFE9E39B1749E051002883ED /* GKMainViewController.m */,
+				DFC2CB971749A44A00EB0833 /* GKLocationManager.h */,
+				DFC2CB981749A44A00EB0833 /* GKLocationManager.m */,
 				DFC2CB6917499F8100EB0833 /* Supporting Files */,
 			);
 			path = Gatekeeper;
@@ -264,6 +278,8 @@
 			files = (
 				DFC2CB6F17499F8100EB0833 /* main.m in Sources */,
 				DFC2CB7317499F8100EB0833 /* GKAppDelegate.m in Sources */,
+				DFC2CB991749A44A00EB0833 /* GKLocationManager.m in Sources */,
+				DFE9E39C1749E052002883ED /* GKMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +452,7 @@
 				DFC2CB9317499F8100EB0833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFC2CB9417499F8100EB0833 /* Build configuration list for PBXNativeTarget "GatekeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +461,7 @@
 				DFC2CB9617499F8100EB0833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
